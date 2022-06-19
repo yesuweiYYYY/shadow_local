@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/temp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="@color/steelblue">
+
+        <Button
+            android:id="@+id/main_getinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="查看信息" />
+
+        <ImageView
+            android:id="@+id/main_personal_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/default_personal_image" />
+
+        <Button
+            android:id="@+id/main_setinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="修改信息" />
+    </LinearLayout>
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="15">-->
+<!--        ></fragment>-->
+    <GridLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="15"
+        android:columnCount="10"
+        android:layout_weight="15">
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/spin_bt"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:text="旋转视角">
+
+        </Button>
+
+        <Button
+            android:id="@+id/ConversationList_bt"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:text="会话列表">
+        </Button>
+
+        <Button
+            android:id="@+id/ChattingRoom_bt"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:text="聊天室">
+        </Button>
+    </LinearLayout>
+
+
+
+
+<!--    </com.example.shadow.orient.CompassView>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical"-->
+<!--        android:weightSum="2"-->
+<!--        android:background="@color/black"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:id="@+id/beacon_icon"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/beacon">-->
+
+<!--        </ImageView>-->
+<!--    </LinearLayout>-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>
